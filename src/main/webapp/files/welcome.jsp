@@ -1,17 +1,16 @@
 <%--
   Created by IntelliJ IDEA.
   User: mariusz
-  Date: 27.05.18
-  Time: 17:03
+  Date: 25.05.18
+  Time: 23:30
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  <a href="generator">Go to generator</a><br>
-    <a href="login">Go to login</a>
-  </body>
+<head>
+    <title>Welcome home</title>
+</head>
+<body>
+    <p>Hello ${param.login}!</p>
+</body>
 </html>

@@ -12,11 +12,9 @@ import java.util.List;
 
 public class ArticleServices {
 
-    SessionFactory sessionFactory;
+    private SessionFactory sessionFactory;
 
-    public ArticleServices() {
-        sessionFactory = HibernateUtils.getSessionFactory();
-    }
+    public ArticleServices() {sessionFactory = HibernateUtils.getSessionFactory();}
 
     public List<Article> getAllArticles(){
         Session sesion = sessionFactory.openSession();

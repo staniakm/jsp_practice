@@ -7,8 +7,8 @@ import java.io.IOException;
 @WebFilter(urlPatterns = "/*")
 public class FilterChars implements Filter {
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
-
+    public void init(FilterConfig filterConfig) {
+        /*doesn't require implementation*/
     }
 
     @Override
@@ -19,6 +19,6 @@ public class FilterChars implements Filter {
 
     @Override
     public void destroy() {
-
+        /*doesn't require implementation*/
     }
 }

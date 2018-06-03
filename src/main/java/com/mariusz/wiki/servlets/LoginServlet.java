@@ -1,6 +1,6 @@
 package com.mariusz.wiki.servlets;
 
-import com.mariusz.wiki.controlers.Controler;
+import com.mariusz.wiki.controlers.Controller;
 import com.mariusz.wiki.entities.Person;
 
 import javax.servlet.RequestDispatcher;
@@ -78,17 +78,17 @@ public class LoginServlet extends HttpServlet {
 
     private void registerNewUser(String uLogin, String uPass, String uName) {
 
-        Controler list = new Controler();
+        Controller list = new Controller();
         list.registerNewUser(uLogin, uPass, uName);
 
     }
     private boolean checkLoginUsage(String login) {
-        Controler list = new Controler();
+        Controller list = new Controller();
         return list.checkLoginUsage(login);
     }
 
     private Person checkCredencial(String login, String pass) {
-        Controler list = new Controler();
+        Controller list = new Controller();
         return list.checkCredentials(login,pass);
     }
 }

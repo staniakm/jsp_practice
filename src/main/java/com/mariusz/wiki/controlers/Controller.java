@@ -4,13 +4,13 @@ import com.mariusz.wiki.entities.Person;
 import com.mariusz.wiki.services.PersonService;
 import org.apache.commons.codec.digest.DigestUtils;
 
-public class Controler {
+public class Controller {
     public void registerNewUser(String login, String pass, String uName) {
         PersonService service = new PersonService();
 
         Person user = new Person();
 
-        String securePassword =  DigestUtils.sha256Hex(pass);;
+        String securePassword =  DigestUtils.sha256Hex(pass);
 
         user.setName(uName);
         user.setLogin(login);

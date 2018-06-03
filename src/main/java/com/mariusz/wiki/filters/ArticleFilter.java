@@ -10,8 +10,8 @@ import java.io.IOException;
 public class ArticleFilter implements Filter {
 
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
-
+    public void init(FilterConfig filterConfig) {
+        /*doesn't require implementation*/
     }
 
     @Override
@@ -29,6 +29,6 @@ public class ArticleFilter implements Filter {
 
     @Override
     public void destroy() {
-
+        /*doesn't require implementation*/
     }
 }

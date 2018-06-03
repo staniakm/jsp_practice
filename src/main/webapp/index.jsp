@@ -13,7 +13,7 @@
   <body>
   <a href="generator">Go to generator</a><br>
     <a href="login">Go to login</a><br>
-  <a href="showAllProducts">Go to shop</a>
+  <a href="showAllProducts">Go to shop</a><br>
   <a href="${pageContext.request.contextPath}/wiki/main">Go to Wiki</a>
   </body>
 </html>

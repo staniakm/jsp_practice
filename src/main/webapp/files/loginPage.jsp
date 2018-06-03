@@ -11,11 +11,14 @@
     <title>Login</title>
 </head>
 <body>
-<form action="./login" name="loginForm" method="post">
+
+<form action="${pageContext.request.contextPath}/login" name="loginForm" method="post">
     <label>Login:</label><input type="text" name="login" id="login">
     <br><label>Password:</label><input type="password" name="pass" id="pass">
+    <input type="hidden" value="" name="reg">
     <br><button name="submit" type="submit">Zaloguj</button>
 </form>
+<a href="./files/register.jsp">Zarejestruj</a>
 
 
 </body>

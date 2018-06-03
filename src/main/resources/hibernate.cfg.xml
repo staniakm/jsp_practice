@@ -23,6 +23,7 @@
 		<!-- mapowanie encji na tabela i tabel na encje -->
 		<mapping class="com.mariusz.wiki.entities.Article"/>
 		<mapping class="com.mariusz.wiki.entities.Content"/>
+		<mapping class="com.mariusz.wiki.entities.Person"/>
 
 	</session-factory>
 </hibernate-configuration>

@@ -1,5 +1,10 @@
 div {
+    /*border: 1px solid black;*/
+}
+
+.blogShort{
     border: 1px solid black;
+    padding: 10px;
 }
 
 .container {
@@ -60,6 +65,15 @@ div {
 
 .sidenav a:hover {
     color: #f1f1f1;
+}
+
+.author{
+    font-size: 11px;
+    margin: 1px;
+}
+
+.artTitle{
+    margin-bottom: 1px;
 }
 /*
 .inner-container {

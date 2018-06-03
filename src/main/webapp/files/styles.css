@@ -22,8 +22,7 @@ div {
     grid-column-start: 1;
     grid-column-end: 3;
     height: 10vh;
-    /*background-color: #111;*/
-
+    background-color: #111;
 }
 
 .nav {

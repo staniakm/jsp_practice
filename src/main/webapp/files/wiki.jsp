@@ -1,5 +1,6 @@
 <%@ page import="com.mariusz.wiki.entities.Article" %>
 <%@ page import="java.util.List" %>
+<%@ page import="com.mariusz.wiki.entities.Person" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -26,7 +27,7 @@
                 <a href="${pageContext.request.contextPath}/login">Login</a>
             </c:if>
             <c:if test="${!empty sessionScope.userAuth}">
-                <a href="${pageContext.request.contextPath}/logout">Logout</a>
+                <a href="${pageContext.request.contextPath}/logout">Logout <%=((Person)session.getAttribute("userAuth")).getName()%></a>
             </c:if>
 
             <a href="${pageContext.request.contextPath}/files/register.jsp">Register</a>

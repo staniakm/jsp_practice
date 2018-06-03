@@ -12,7 +12,7 @@
     <title>Generator</title>
 </head>
 <body>
-<form name="passGenerator" method="post" action="./generator">
+<form name="passGenerator" method="post" action= "./generator">
     <label>Length:</label>
     <select name="length">
         <option>5</option>

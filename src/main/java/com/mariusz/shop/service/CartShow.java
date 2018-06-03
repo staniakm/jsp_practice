@@ -19,12 +19,12 @@ public class CartShow extends HttpServlet {
         dispatcher.forward(request, response);
     }
 
-    public void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html; charset=UTF-8");
-
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/files/shoppingCart.jsp");
-        dispatcher.forward(request, response);
-
-    }
+//    public void doPost(HttpServletRequest request, HttpServletResponse response)
+//            throws ServletException, IOException {
+//        response.setContentType("text/html; charset=UTF-8");
+//
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("/files/shoppingCart.jsp");
+//        dispatcher.forward(request, response);
+//
+//    }
 }

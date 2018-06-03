@@ -1,10 +1,4 @@
-<%@ page import="com.mariusz.wiki.entities.Article" %><%--
-  Created by IntelliJ IDEA.
-  User: mariusz
-  Date: 01.06.18
-  Time: 11:16
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="com.mariusz.wiki.entities.Article" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <style>

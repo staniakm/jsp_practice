@@ -18,7 +18,7 @@
     <input type="hidden" value="" name="reg">
     <br><button name="submit" type="submit">Zaloguj</button>
 </form>
-<a href="./files/register.jsp">Zarejestruj</a>
+<a href="${pageContext.request.contextPath}/files/register.jsp">Zarejestruj</a>
 
 
 </body>

@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 
 @WebServlet(urlPatterns = "/wiki/main/articles/new")
-public class ArticleNew extends HttpServlet {
+public class ArticleNewServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

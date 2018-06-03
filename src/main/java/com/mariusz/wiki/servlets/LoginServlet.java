@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebServlet(value = "/login")
-public class Login extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -30,7 +30,7 @@ public class Login extends HttpServlet {
                 message = "Incorrect password or login. Password and login should have length > 4";
 
             }else if ( checkLoginUsage(req.getParameter("un"))){
-                message = "Login is taken.";
+                message = "LoginServlet is taken.";
             }
 
             if (message.length()==0){

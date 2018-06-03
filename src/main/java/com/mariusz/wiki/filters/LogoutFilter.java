@@ -17,14 +17,9 @@ public class LogoutFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpSession session = ((HttpServletRequest) servletRequest).getSession();
-//        session.setAttribute("authUser",);
         session.removeAttribute("userAuth");
 
         ((HttpServletResponse)servletResponse).sendRedirect(((HttpServletRequest) servletRequest).getContextPath()+"/wiki/main");
-
-//        RequestDispatcher dispatcher = servletRequest.getRequestDispatcher("/wiki/main");
-//        dispatcher.forward(servletRequest,servletResponse);
-
     }
 
     @Override

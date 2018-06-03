@@ -21,7 +21,9 @@ public class ArticleServices {
     public List<Article> getAllArticles(){
         Session sesion = sessionFactory.openSession();
         Transaction tran = sesion.beginTransaction();
-        List<Article> articles =  sesion.createQuery("FROM Article a inner join fetch a.content order by a.lastUpdate DESC").list();
+        Query query = sesion.createQuery("FROM Article a inner join fetch a.content order by a.lastUpdate DESC");
+
+        List<Article> articles = query.list();
 
         tran.commit();
         sesion.close();
@@ -44,7 +46,6 @@ public class ArticleServices {
     public Article getArticleById(int id) {
         Session sesion = sessionFactory.openSession();
         Transaction tran = sesion.beginTransaction();
-//        Article art = (Article) sesion.get(Article.class,id);
 
         Query query = sesion.createQuery("FROM Article a inner join fetch a.content where a.id = :id");
         query.setParameter("id",id);
